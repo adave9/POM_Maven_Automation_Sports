@@ -1,0 +1,41 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 229.71 s <<< FAILURE! - in TestSuite
+validateSignInBtn(com.qa.testcases.AddidasHomePageTest)  Time elapsed: 3.75 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+The element reference of <button class="gl-cta gl-cta--tertiary profile_button_link___Z9706 outlined-icon-color___j8D2R undefined" type="button"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [17db5d9e-7e21-44d9-8bd6-989bef0bbd81, isElementDisplayed {id=15907984-fb96-4bb6-be5e-b7da150d5936}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.5, moz:accessibilityChecks: false, moz:buildID: 20221104133228, moz:debuggerAddress: 127.0.0.1:25700, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 1992, moz:profile: C:\Users\ankur\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:25700/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (17db5d9e-7e21-44d9-8bd6-989bef0bbd81)] -> xpath: //button[@data-auto-id='profile-icon-header']]
+Session ID: 17db5d9e-7e21-44d9-8bd6-989bef0bbd81
+	at com.qa.testcases.AddidasHomePageTest.validateSignInBtn(AddidasHomePageTest.java:68)
+
+validateSignIn(com.qa.testcases.AddidasHomePageTest)  Time elapsed: 10.91 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: #login\-register\-auto\-flow\-input
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [e2771942-e789-4ff0-8b8c-daac7af11970, findElement {using=id, value=login-register-auto-flow-input}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.5, moz:accessibilityChecks: false, moz:buildID: 20221104133228, moz:debuggerAddress: 127.0.0.1:45868, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15172, moz:profile: C:\Users\ankur\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:45868/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e2771942-e789-4ff0-8b8c-daac7af11970
+	at com.qa.testcases.AddidasHomePageTest.validateSignIn(AddidasHomePageTest.java:74)
+
+validateCloseSIgnIn(com.qa.testcases.AddidasHomePageTest)  Time elapsed: 10.909 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //button[@class='gl-modal__close']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ce1cae63-bd85-4cc6-8d6a-7588baeb7602, findElement {using=xpath, value=//button[@class='gl-modal__close']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.5, moz:accessibilityChecks: false, moz:buildID: 20221104133228, moz:debuggerAddress: 127.0.0.1:1893, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17256, moz:profile: C:\Users\ankur\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:1893/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ce1cae63-bd85-4cc6-8d6a-7588baeb7602
+	at com.qa.testcases.AddidasHomePageTest.validateCloseSIgnIn(AddidasHomePageTest.java:81)
+
